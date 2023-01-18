@@ -58,52 +58,53 @@ public class Employee {
 
 
     public static String fullNameWorkers(Employee[] workers) {
-        String name = null;
+        System.out.print(" ФИО всех сотрудников = ");
+        String name = workers[0].getFullName();
         for (int i = 0; i < workers.length; i++) {
             name += ", ";
             name += workers[i].getFullName();
         }
-        System.out.println(" ФИО всех сотрудников =" + name);
         return name;
     }
 
     public static int minSalary(Employee[] workers) {
 
         int min = workers[0].getSalary();
+        System.out.print("минимальная заплата = ");
         for (int i = 0; i < workers.length; i++) {
             if (min > workers[i].getSalary()) {
                 min = workers[i].getSalary();
 
             }
         }
-        System.out.println("минимальная заплата = " +  min);
         return min;
     }
 
     public static int maxSalary(Employee[] workers) {
+        System.out.print("Максимальная зарплата = ");
         int max = workers[0].getSalary();
         for (int i = 0; i < workers.length; i++) {
             if (max < workers[i].getSalary()) {
                 max = workers[i].getSalary();
             }
         }
-        System.out.println("Максимальная зарплата = " + max);
         return max;
     }
     public static int salarySum(Employee[] workers) {
+        System.out.print("Сумма затрат на зарплаты в месяц= ");
         int sum = 0;
         for (int i = 0; i < workers.length; i++) {
             sum += workers[i].getSalary();
         }
-        System.out.println("Сумма затрат на зарплаты в месяц= " + sum);
         return sum;
     }
     public static int averageSalary(Employee[] workers) {
+        System.out.print("среднее значение затрат на месяц = ");
         int sum = 0;
         for (int i = 0; i < workers.length; i++) {
             sum += workers[i].getSalary();
         }
-        System.out.println("среднее значение затрат на месяц = " + sum / workers.length);
+        System.out.println( sum / workers.length);
         return sum;
     }
 
