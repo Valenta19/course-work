@@ -98,6 +98,14 @@ public class Employee {
         System.out.println("Сумма затрат на зарплаты в месяц= " + sum);
         return sum;
     }
+    public static int averageSalary(Employee[] workers) {
+        int sum = 0;
+        for (int i = 0; i < workers.length; i++) {
+            sum += workers[i].getSalary();
+        }
+        System.out.println("среднее значение затрат на месяц = " + sum / workers.length);
+        return sum;
+    }
 
 }
 
