@@ -27,24 +27,24 @@ public class Employee {
         return this.salary;
     }
 
-    public String setFullName(String fullName) {
-        return this.fullName;
+    public void setFullName(String fullName) {
+         this.fullName = fullName;
     }
 
-    public int setDepartment(int department) {
-        return this.department;
+    public void setDepartment(int department) {
+         this.department = department;
     }
 
-    public int setSalary(int salary) {
-        return this.salary;
+    public void setSalary(int salary) {
+         this.salary = salary;
     }
 
     public int getId() {
         return this.id;
     }
 
-    public int setID() {
-        return this.id;
+    public void setID() {
+         this.id = id;
     }
 
     public String toString() {

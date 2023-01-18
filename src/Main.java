@@ -16,11 +16,10 @@ public class Main {
 
         System.out.println(Arrays.toString(workers));
         System.out.println(Employee.salarySum(workers));
-        System.out.println(Employee.fullNameWorkers(workers));
         System.out.println(Employee.minSalary(workers));
         System.out.println(Employee.maxSalary(workers));
+        System.out.println(Employee.fullNameWorkers(workers));
         System.out.println(Employee.averageSalary(workers));
-
 
     }
 }
