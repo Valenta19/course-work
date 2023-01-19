@@ -91,7 +91,7 @@ public class Employee {
         return max;
     }
     public static int salarySum(Employee[] workers) {
-        System.out.print("Сумма затрат на зарплаты в месяц= ");
+        System.out.print("Сумма затрат на зарплаты в месяц = ");
         int sum = 0;
         for (int i = 0; i < workers.length; i++) {
             sum += workers[i].getSalary();
@@ -100,12 +100,9 @@ public class Employee {
     }
     public static int averageSalary(Employee[] workers) {
         System.out.print("среднее значение затрат на месяц = ");
-        int sum = 0;
-        for (int i = 0; i < workers.length; i++) {
-            sum += workers[i].getSalary();
-        }
-        System.out.println( sum / workers.length);
-        return sum;
+        int sum1 = Employee.salarySum(workers);
+        System.out.println(sum1 / workers.length);
+        return sum1;
     }
 
 }
